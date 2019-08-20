@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "FB Emotion Analyzer",
+	"description": "This chrome extension will annotate parts of a broadcasted FB live video that will determine which parts the viewers are happy, sad, surprised and, angry. It will also show the accumulating emotion of the viewers during FB live.",
+	"version": "1.0.4",
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"https://facebook.com/*",
+		"https://m.facebook.com/*",
+		"https://localhost/*"
+	],
+	"content_scripts": [
+		{
+			"css": ["/css/css/circle.css","/css/sass/circle.scss","/css/semantic.min.css"],
+			"matches": ["https://www.facebook.com/*","https://www.facebook.com/*/videos/*"],
+			"js": ["jquery-3.3.1.min.js", "script.js"]
+		}
+	]
+}
