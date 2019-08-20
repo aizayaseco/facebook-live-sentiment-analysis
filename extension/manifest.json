@@ -12,7 +12,6 @@
 	],
 	"content_scripts": [
 		{
-			"css": ["/css/css/circle.css","/css/sass/circle.scss","/css/semantic.min.css"],
 			"matches": ["https://www.facebook.com/*","https://www.facebook.com/*/videos/*"],
 			"js": ["jquery-3.3.1.min.js", "script.js"]
 		}
